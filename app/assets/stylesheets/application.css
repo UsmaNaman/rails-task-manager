@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ li {
+   list-style-type: none;
+ }
+
+ h1 {
+   font-family: monospace;
+   color: crimson;
+ }
+
+ h2 {
+   font-family: 'Courier New', Courier, monospace;
+ }
