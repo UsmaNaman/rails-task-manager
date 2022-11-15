@@ -1,10 +1,15 @@
-<h1>📝 - My Task List! - 📝</h1>
+<div class="container mt-5">
+  <h1>📝 - My Task List! - 📝</h1>
 
-<ul>
-  <% @tasks.each do |task| %>
-  <li><%= task.completed ? "✅" : "⬜️" %> - <%= link_to task.title, task_path(task) %><br></li>
-  <% end %>
-</ul>
+<div class="row mt-5">
+  <ul>
+    <% @tasks.each do |task| %>
+    <li><%= task.completed ? "✅" : "⬜️" %> - <%= link_to task.title, task_path(task) %><br></li>
+    <% end %>
+  </ul>
+</div>
 
-<%= link_to "Add a task", new_task_url %>
 
+ <i class="fa-solid fa-plus"></i>
+  <%= link_to "Add a task", new_task_url %>
+</div>
